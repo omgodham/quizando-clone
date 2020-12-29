@@ -21,6 +21,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="home__bottom">
             <h1>Total money won on Quizando</h1>
                 <div className="money__won">
@@ -28,7 +29,6 @@ export default function Home() {
                     <h2>€149,788.94</h2>
                 </div>
         </div>
-
     </div>
   );
 }

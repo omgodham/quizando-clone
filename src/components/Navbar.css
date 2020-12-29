@@ -1,15 +1,44 @@
+
 .navbar{
-    width:100%;
-    background-color: #323031;
-    height: 90px;    
+    width:100%; 
+    background-color: #323031;   
 }
+/* signup option at top */
+.navbar__login__separate__block{
+    background-color: var(--red);
+    width: 100%;
+    display: none;
+}
+#separate__signup{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#separate__dropdown{
+    background-color: var(--red);
+}
+.separate__icon{
+    color:white !important;
+    font-size: 35px !important;
+}
+#separate__signup >span:hover{
+    color: white;
+    opacity: 0.8;
+    cursor: pointer;
+}
+/* Main Navbar */
 .navbar__block{
+    height: 90px;
     width: 87%;
-    padding-top:20px;
+    padding-top:13px;
     margin:0 auto;
     display: grid;
     grid-template-columns: 0.2fr 1fr;
 }
+
 .logo__image{
     width: 180px;
 }
@@ -62,4 +91,99 @@
 .signup__icon{
     color:var(--red) !important;
     font-size: 35px !important;
+}
+
+/* mobile menu icon */
+.mobile-menu-icon{
+    cursor: pointer;
+    position: absolute;
+     top: 80px;
+     right: 30px;
+     display: none;
+}
+
+.mobile-menu-icon >span{
+    margin-bottom: 4px;
+    display: block;
+    background-color: #fff;
+    width: 28px;
+    height: 3px;
+    opacity: 0.7;
+}
+
+/* vertical navbar */
+.vertical__navbar{
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.vertical__login{
+    display: flex;
+    background-color: var(--red);
+    padding: 10px 20px;
+    align-items: center;
+}
+.vertical__login >h2{
+    margin-left: 10px;
+    color: white;
+}
+.vertical__login >img{
+    border-radius: 180%;
+}
+.vertical__createaccount >h2{
+    margin-left: 10px;
+    color: white;
+}
+.vertical__createaccount{
+    display: flex;
+    background-color: var(--yellow);
+    padding: 10px 20px;
+    align-items: center;
+}
+.vertical__options{
+    background-color: var(--light);
+    display: flex;
+}
+.vertical__nav__menu{
+    width: 100%;
+}
+.vertical__nav__menu li>a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: #000;
+}
+.vertical__nav__menu >li{
+    padding:5px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgba(108,117,125,0.15);
+    padding-left: 20px;
+
+}
+.images__icons{
+    height: 30px;
+}
+.menu__title{
+    background-color: var(--blue);
+    color: #fff;
+}
+.menu__title >a{
+    font-weight: 900;
+}
+
+
+@media screen and (max-width:993px){
+    .mobile-menu-icon{
+        display: block;
+    }
+    .navbar__login__separate__block{
+        display: block;
+    }
+    .navbar__right{
+        display: none;
+    }
+    .vertical__navbar__active{
+        display: flex;
+      flex-direction: column;
+}
 }

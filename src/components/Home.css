@@ -1,0 +1,122 @@
+.home__block{
+    width: 100%;
+    background-image: url("https://www.quizando.com/assets/banners/classics_bg.png");
+}
+.home__block2{
+    width: 100%;
+    background-image: url("https://www.quizando.com/assets/banners/hosts_bg.png");
+}
+.home__content{
+    width: 90%;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+}
+
+.home__left{
+    margin-top: auto;
+}
+.home__left__image{
+    width: 100%;
+    margin-top: auto;
+    object-fit: contain;
+}
+
+.home__right{
+    color: white;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+}
+.home__right >h1{
+    font-weight: 700;
+}
+.home__right >p{
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+
+.home__top__btn{
+    background-color: var(--blue);
+    color: white;
+    font-weight: 800;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    width: fit-content;
+    font-size: 15px;
+}
+.home__top__btn:hover{
+cursor: pointer;
+background-color: white;
+color: var(--blue);
+}
+
+.home__bottom{
+    background: linear-gradient(#362550,#100029);
+    color: white;
+    text-align: center;
+}
+.money__won{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.home__bottom >h1{
+    color: var(--red);
+    font-weight: 900;
+}
+.money__img{
+    height: 70px;
+}
+
+@media screen and (max-width:993px){
+    .home__content{
+        height: 62vh;
+        display: flex;
+    }
+    .home__right{
+        width: 100%;
+        font-size: 80%;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width:640px){
+    .home__content{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .home__right{
+        font-size: 70%;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .home__content{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 95%;
+        height: fit-content;
+        margin: 0 auto;
+    }
+    .home__right{
+        font-size: 70%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .home__bottom >h1{
+        color: var(--red);
+        font-weight: 900;
+        font-size: 22px;
+    }
+    .money__img{
+        height: 50px;
+    }
+}

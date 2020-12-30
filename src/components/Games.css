@@ -53,7 +53,16 @@ h3:nth-child(3){
 }
 @media screen and (max-width:327px){
     .games__btns{
-        margin-top: 4rem;
+        margin-top: 1rem;
         margin-bottom: 0.5rem;
+        }
+        .games__btns >h3{
+            flex: 0.33;
+            font-size: 20px;
+            margin: 0 2px;
+            padding:5px 0;
+            font-weight: 500;
+            color: white;
+            cursor: pointer;
         }
 }

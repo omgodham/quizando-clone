@@ -1,13 +1,15 @@
 .home__block{
     width: 100%;
     background-image: url("https://www.quizando.com/assets/banners/classics_bg.png");
+    background-size: cover;
 }
 .home__block2{
     width: 100%;
     background-image: url("https://www.quizando.com/assets/banners/hosts_bg.png");
+    background-size: cover;
 }
 .home__content{
-    width: 90%;
+    width: 80%;
     height: 70vh;
     margin: 0 auto;
     display: flex;
@@ -24,14 +26,13 @@
 
 .home__right{
     color: white;
-    width: 80%;
-    height: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 60px;
+    justify-content: center;   
 }
 .home__right >h1{
+    font-size: 30px;
     font-weight: 700;
 }
 .home__right >p{
@@ -69,32 +70,70 @@ color: var(--blue);
 }
 .home__bottom >h1{
     color: var(--red);
-    font-weight: 900;
+    font-weight: 700;
+    font-size: 35px;
 }
 .money__img{
-    height: 70px;
+    height: 60px;
+}
+
+.money__won >h2{
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width:993px){
     .home__content{
-        height: 62vh;
+        height: 65vh;
         display: flex;
     }
     .home__right{
         width: 100%;
-        font-size: 80%;
-        padding-left: 20px;
+    }
+   
+    .home__bottom >h1{
+        font-weight: 700;
+        font-size: 30px;
     }
 }
-
+@media screen and (max-width:772px){
+    .home__right{
+        width: 100%;
+    }
+    .home__right >h1{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .home__right >p{
+        margin: 5px 0;
+        font-size: 20px;
+    }
+}
 @media screen and (max-width:640px){
     .home__content{
         width: 95%;
+        height: 50vh;
         margin: 0 auto;
     }
-    .home__right{
-        font-size: 70%;
-        padding-left: 20px;
+    .home__left{
+        margin-top: auto;
+        width:fit-content;
+    }
+    .home__left__image{
+        width: 90%;
+        margin-top: auto;
+        object-fit: contain;
+    }
+    .home__right >h1{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .home__bottom >h1{
+        font-size: 25px;
+    }
+    .money__won >h2{
+        margin: 5px 0;
+        font-size: 20px;
     }
 }
 
@@ -103,20 +142,25 @@ color: var(--blue);
         display: flex;
         flex-direction: column-reverse;
         width: 95%;
-        height: fit-content;
+        height: 70vh;
         margin: 0 auto;
     }
     .home__right{
-        font-size: 70%;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        text-align: center;
+        margin-top: 10px;
     }
     .home__bottom >h1{
         color: var(--red);
         font-weight: 900;
         font-size: 22px;
     }
-    .money__img{
-        height: 50px;
+    .home__left{
+       text-align: center;  
+    }
+    .home__left__image{
+        width: 70%;
+    }
+    .home__top__btn{
+        margin: auto auto;
     }
 }

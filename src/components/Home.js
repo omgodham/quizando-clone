@@ -1,7 +1,7 @@
 import "./Home.css";
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-
+import homedata from "./homedata";
 export default function Home() {
 
 
@@ -9,41 +9,24 @@ export default function Home() {
     <div className="home">
 
     <Carousel>
-
-    <Carousel.Item className="home__block">
+    {homedata.map( item => {
+      return <Carousel.Item className={item.className} 
+      style={{backgroundImage:`url(${item.bg_image})`,backgroundSize:'cover'}}>
         <div className="home__content">
           <div className="home__left">
-            <img className="home__left__image" src="https://www.quizando.com/assets/banners/classics_fg.png" />
+            <img className="home__left__image" src={item.fg_image} />
           </div>
           <div className="home__right">
             <h1>
-              Play our classic quizzes, anywhere, anytime & fight your way to
-              the top of the leaderboard
+              {item.header}
             </h1>
-            <p>It’s real cash for the winners!</p>
+            <p>{item.description}</p>
             <button className="home__top__btn">Click here</button>
           </div>
       </div>
-    </Carousel.Item>
-
-    <Carousel.Item className="home__block2">
-        <div className="home__content">
-          <div className="home__left">
-            <img className="home__left__image" src="https://www.quizando.com/assets/banners/classics_fg.png" />
-          </div>
-          <div className="home__right">
-            <h1>
-              Play our classic quizzes, anywhere, anytime & fight your way to
-              the top of the leaderboard
-            </h1>
-            <p>It’s real cash for the winners!</p>
-            <button className="home__top__btn">Click here</button>
-          </div>
-        </div>
-    </Carousel.Item>
-
+    </Carousel.Item>;
+    })}
     </Carousel>
-
       <div className="home__bottom">
             <h1>Total money won on Quizando</h1>
                 <div className="money__won">

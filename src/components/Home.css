@@ -1,13 +1,4 @@
-.home__block{
-    width: 100%;
-    background-image: url("https://www.quizando.com/assets/banners/classics_bg.png");
-    background-size: cover;
-}
-.home__block2{
-    width: 100%;
-    background-image: url("https://www.quizando.com/assets/banners/hosts_bg.png");
-    background-size: cover;
-}
+
 .home__content{
     width: 80%;
     height: 70vh;
@@ -154,13 +145,15 @@ color: var(--blue);
         font-weight: 900;
         font-size: 22px;
     }
+    .home__top__btn{
+        margin: auto auto;
+    }
     .home__left{
        text-align: center;  
     }
     .home__left__image{
         width: 70%;
+        height: 200px;
     }
-    .home__top__btn{
-        margin: auto auto;
-    }
+   
 }

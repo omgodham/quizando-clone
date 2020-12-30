@@ -1,12 +1,17 @@
-import React from "react";
+import React,{useState} from "react";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import {Link} from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
-  function show() {
-    const menu=document.querySelector("#vertical__navbar_block");
-    menu.classList.toggle("vertical__navbar__active");
+  const [flag,setFlag]=useState(false);
+
+  function show(){
+      setFlag(!flag);
   }
+  function hide(){
+    setFlag(false);
+}
 
   return (
     <div className="navbar">
@@ -18,8 +23,8 @@ export default function Navbar() {
             <option>GBP</option>
           </select>
           <AccountCircleIcon className="separate__icon" />
-          <span className="login">Login</span>
-          <span>Sign Up</span>
+          <Link to="/login" style={{textDecoration:`none`,color:'white'}}><span className="login">Login</span></Link>
+          <Link to="/signup" style={{textDecoration:`none`,color:'white'}}><span>Sign Up</span></Link>
         </div>
       </div>
       <div className="mobile-menu-icon" id="#mobile-menu" onClick={show}>
@@ -28,11 +33,11 @@ export default function Navbar() {
         <span></span>
       </div>
       <div className="navbar__block">
-        <div className="navbar__logo">
-          <img
+        <div className="navbar__logo" onClick={hide}>
+          <Link to="/"><img
             className="logo__image"
             src="https://www.quizando.com/assets/Quizando-Logo.png"
-          />
+          /></Link>
         </div>
         <div className="navbar__right">
           <ul className="nav__menu">
@@ -70,20 +75,21 @@ export default function Navbar() {
               <option>GBP</option>
             </select>
             <AccountCircleIcon className="signup__icon" />
-            <span className="login">Login</span>
-            <span>Sign Up</span>
+            <Link to="/login" style={{textDecoration:`none`,color:'white'}}><span className="login">Login</span></Link>
+            <Link to="/signup" style={{textDecoration:`none`,color:'white'}}><span>Sign Up</span></Link>
           </div>
         </div>
       </div>
-      <div className="vertical__navbar" id="vertical__navbar_block">
-        <div className="vertical__login">
+      <div style={{display: flag ? 'flex' : 'none'}} className="vertical__navbar" id="vertical__navbar_block">
+      <Link to="/login" style={{textDecoration:`none`,color:'white'}}><div className="vertical__login" onClick={hide}>
         <img src="https://www.quizando.com/assets/nav_login_mobile.png" />
           <h2>Login</h2>
-        </div>
-        <div className="vertical__createaccount">
+        </div></Link>
+        <Link to="/signup" style={{textDecoration:`none`,color:'white'}}>
+        <div className="vertical__createaccount" onClick={hide}>
         <img src="https://www.quizando.com/assets/nav_reg_small.png" />
           <h2>Create Account</h2>
-        </div>
+        </div></Link>
         <div className="vertical__options">
         <ul className="vertical__nav__menu">
         <li className="menu__title"><a href="#" style={{color:'white'}}>Quizzes</a></li>

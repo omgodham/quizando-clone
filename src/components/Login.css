@@ -1,0 +1,127 @@
+.login{
+    margin: 0;
+    padding: 0;
+}
+.login__top{
+    background-color: #f2f2f2;  
+    margin-bottom: 20px;
+}
+.login__header{
+    background-color: #f2f2f2;
+    display: flex;
+    width: fit-content;
+    margin: 0px auto;
+    padding: 20px 0;
+    align-items: center;
+}
+.login__header >img{
+margin: 0 10px;
+}
+
+.login__header >h1{
+    font-weight: 800;
+    opacity: .8;
+}
+
+form{
+    width: 50%;
+    margin: 0 auto;
+    background-color:#f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: "Titillium Web",sans-serif;
+}
+form >p{
+    text-align: center;
+}
+.login__links{
+    color: var(--orange);
+    cursor: pointer;
+}
+.login__links:hover{
+    color: var(--blue);
+}
+.login__socials{
+    width: fit-content;
+   margin-left: auto;
+   margin-right: auto;
+display: flex;
+margin-bottom: 20px;
+}
+.login__socials>button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+.login__socials >button>i{
+    margin-right: 10px;
+}
+button:nth-child(1){
+    background-color: #4267b2;
+    color: white;
+}
+button:nth-child(2){
+    background-color: black;
+    color: white;
+}
+.separator{
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-weight: 900;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+.login__btn{
+    background-color: var(--pink) !important;
+    opacity: 0.7;
+    border: none !important;
+    width: 100%;
+    font-size: 20px !important ;
+    margin: 0 auto !important;
+    font-weight: 700 !important;
+}
+
+@media screen and (max-width:934px){
+    form{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media screen and (max-width:591px){
+    form{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .login__socials{
+    display: flex;
+    flex-direction: column;
+    }
+    .login__socials{
+        width: 100%;
+    }
+    button:nth-child(1){
+        margin-bottom: 10px;
+    }
+    .login__header >h1{
+        padding-top: 10px;
+        font-size: 30px;
+
+    }
+}
+
+
+@media screen and (max-width:340px){
+    .login__header >h1{
+        padding-top: 12px;
+        font-size: 23px;
+    }
+}

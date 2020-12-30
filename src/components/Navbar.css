@@ -185,10 +185,6 @@
     .navbar__right{
         display: none;
     }
-    .vertical__navbar__active{
-        display: flex;
-      flex-direction: column;
-}
 }
 @media screen and (max-width:500px){
     .navbar__logo{

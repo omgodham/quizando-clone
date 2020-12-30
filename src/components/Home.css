@@ -140,6 +140,13 @@ color: var(--blue);
         text-align: center;
         margin-top: 10px;
     }
+    .home__right >h1{
+        font-size: 32px;
+    }
+    .home__right >p{
+        font-size: 22px;
+        font-weight: 400;
+    }
     .home__bottom >h1{
         color: var(--red);
         font-weight: 900;
@@ -153,7 +160,7 @@ color: var(--blue);
     }
     .home__left__image{
         width: 70%;
-        height: 200px;
+        height: 300px;
     }
    
 }

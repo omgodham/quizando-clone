@@ -48,6 +48,22 @@ export default function Footer() {
                 </div>
             </div>
         </div>
+        <div className="copywrite">
+        <span>
+        Quizando is a company operating in Malta with the registration number 
+        C-67170 and its registered office at Quizando, Web Matters Limited,
+         Ferris Building Level 1, 1, St Luke's Rd G'Mangia, Pieta PTA 1020, Malta.
+        </span>
+        </div>
+        <div className="footer__bottom">
+                <div className="footer__bottom__content">
+                   <div className="left__section">
+                    <img src="https://www.quizando.com/assets/Quizando-Logo.png" />
+                    <span>Copyright © 2020</span>
+                    </div>
+                    <img className="webmatters" src="https://www.quizando.com/assets/webmatters.png" />
+                </div>
+        </div>
     </div>
     )
 }

@@ -141,10 +141,10 @@ color: var(--blue);
         margin-top: 10px;
     }
     .home__right >h1{
-        font-size: 32px;
+        font-size: 20px;
     }
     .home__right >p{
-        font-size: 22px;
+        font-size: 15px;
         font-weight: 400;
     }
     .home__bottom >h1{
@@ -160,7 +160,14 @@ color: var(--blue);
     }
     .home__left__image{
         width: 70%;
-        height: 300px;
+        height: 200px;
     }
    
+}
+
+@media screen and (max-width:379px){
+    .home__left__image{
+        width: 70%;
+        height: 150px;
+    }
 }

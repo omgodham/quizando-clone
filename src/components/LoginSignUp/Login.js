@@ -2,6 +2,8 @@ import "./Login.css";
 import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import search from "../../images/search.png";
+import facebook from "../../images/facebook.png";
 export default function Login() {
   return (
     <div className="login">
@@ -14,8 +16,8 @@ export default function Login() {
       <Form>
         <p style={{textAlign:'center'}}><span>Login to Quizando with your social media account or email address</span></p>
         <div className="login__socials">
-            <button><i class="fi-snsuxl-facebook"></i>Login with Facebook</button>
-            <button><i class="fi-snsuxl-google-logo"></i>Login with Google</button>
+            <button><img alt="" src={facebook}/>Login with Facebook</button>
+            <button><img alt="" src={search}/>Login with Google</button>
         </div>
         <p className="separator">OR</p>
         <Form.Group controlId="formBasicEmail">

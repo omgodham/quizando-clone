@@ -1,0 +1,23 @@
+
+.live__cards{
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    margin-top: 4rem;
+}
+.live__header{
+    text-align: center;
+    background-color: var(--light);
+    width: 100%;
+    padding: 10px 0;
+}
+.live__header>h1{
+    font-weight: 900;
+}
+.live__header>p{
+    font-size: 20px;
+}
+.live__header>h1>font{
+color: var(--red);
+}

@@ -23,8 +23,11 @@ export default function Navbar() {
             <option>GBP</option>
           </select>
           <AccountCircleIcon className="separate__icon" />
-          <Link to="/login" style={{textDecoration:`none`,color:'white'}}><span className="login">Login</span></Link>
-          <Link to="/signup" style={{textDecoration:`none`,color:'white'}}><span>Sign Up</span></Link>
+          <Link to="/login" style={{textDecoration:`none`,color:'white'}}>
+          <div className="no" ><h5 onClick={hide}>Login</h5>
+          </div>
+          </Link>
+          <Link to="/signup" style={{textDecoration:`none`,color:'white'}}><h5 onClick={hide}>Sign Up</h5></Link>
         </div>
       </div>
       <div className="mobile-menu-icon" id="#mobile-menu" onClick={show}>
@@ -41,30 +44,30 @@ export default function Navbar() {
         </div>
         <div className="navbar__right">
           <ul className="nav__menu">
-            <li>
-              <a href="#" className="nav__links">
+             <Link to="/live"><li>
+             <a href="#" className="nav__links">
                 Live!
               </a>
-            </li>
-            <li>
-              <a href="#" className="nav__links">
+            </li></Link>
+            <Link to="/classics"><li>
+             <a href="#" className="nav__links">
                 Classics
               </a>
-            </li>
-            <li>
+            </li></Link>
+            <Link to="/notokens"><li>
               <a href="#" className="nav__links">
                 Free Games
               </a>
-            </li>
+            </li></Link>
             <li>
               <a href="#" className="nav__links">
                 Private Events
               </a>
             </li>
             <li>
-              <a href="#" className="nav__links">
+              <Link to='/hosts'><a href="#" className="nav__links">
                 Our Partners
-              </a>
+              </a></Link>
             </li>
           </ul>
 
@@ -75,11 +78,13 @@ export default function Navbar() {
               <option>GBP</option>
             </select>
             <AccountCircleIcon className="signup__icon" />
-            <Link to="/login" style={{textDecoration:`none`,color:'white'}}><span className="login">Login</span></Link>
-            <Link to="/signup" style={{textDecoration:`none`,color:'white'}}><span>Sign Up</span></Link>
+            <h6 onClick={hide}><Link to="/login" style={{textDecoration:`none`,color:'white'}}>Login</Link></h6>
+            <Link to="/signup" style={{textDecoration:`none`,color:'white'}}><h6 onClick={hide}>Sign Up</h6></Link>
           </div>
         </div>
       </div>
+
+
       <div style={{display: flag ? 'flex' : 'none'}} className="vertical__navbar" id="vertical__navbar_block">
       <Link to="/login" style={{textDecoration:`none`,color:'white'}}><div className="vertical__login" onClick={hide}>
         <img src="https://www.quizando.com/assets/nav_login_mobile.png" />

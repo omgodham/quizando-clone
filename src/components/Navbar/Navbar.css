@@ -76,20 +76,26 @@
 }
 .signup{
     margin-left: auto;
-
     display: flex;
     color: white;
     align-items: center;
 }
-.login{
-    padding: 0 5px;
-    margin-right: 5px;
-    border-right: 1px solid;
+h5{
+    font-size: 17px !important;
+    padding-top: 5px;
+    padding-right: 5px;
 }
-.signup >span:hover{
-    color:var(--red);
-    cursor: pointer;
+h5:hover{
+    opacity: 0.8;
 }
+h6{
+    padding-top: 5px;
+    padding-right: 3px;
+}
+h6:hover{
+color: var(--red);
+}
+
 .signup__icon{
     color:var(--red) !important;
     font-size: 35px !important;

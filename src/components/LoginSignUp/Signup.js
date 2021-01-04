@@ -5,8 +5,13 @@ import Button from "react-bootstrap/Button";
 import countrylist from "./countrylist";
 import search from "../../images/search.png";
 import facebook from "../../images/facebook.png";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+
 export default function Login() {
-  return (
+  return ( 
+   <>
+   <Navbar />
     <div className="login">
       <div className="login__top">
         <div className="login__header">
@@ -54,5 +59,7 @@ export default function Login() {
         </Button>
       </Form>
     </div>
+    <Footer />
+    </>
   );
 }

@@ -1,9 +1,16 @@
 import "./Card.css";
-import React from "react";
+import React,{useState} from "react";
+import {Link} from "react-router-dom";
+export default function Card({id ,title, price, dateAndTime}) {
 
-export default function Card({ title, price }) {
+  var day=dateAndTime.split('T')[0];
+  var myDate1 = new Date(day);
+  var onlyDay=myDate1.toDateString();
+// // console.log(onlyDate.split('2021')[0]);
+  onlyDay=onlyDay.split('2021')[0];
+
   return (
-      <div className="card">
+    <Link to={`/classics/${id}`}> <div className="card">
         <div className="card__fix__block">
           <img
             className="card__logo"
@@ -17,8 +24,9 @@ export default function Card({ title, price }) {
         <div className="card__bottom">
           <h4>Prize Pool €{price}</h4>
           <button className="card__bottom__btn">Play Now!</button>
-          <p>Closes: Today @4:30PM</p>
+          <p>Closes: {onlyDay} @4:30PM</p>
         </div>
       </div>
+      </Link>
   );
 }

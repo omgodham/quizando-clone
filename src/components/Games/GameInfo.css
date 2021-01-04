@@ -1,0 +1,70 @@
+.game__info{
+width: 70%;
+margin: 20px auto;
+background-color:var(--blue);
+/* padding:30px; */
+display: flex;
+flex-direction:column ;
+text-align: center;
+color: white;
+}
+.current__prize{
+    margin-top: 20px;
+    background-color: var(--blue);
+}
+.current__prize >h5{
+font-weight: 900;
+font-size: 25px;
+margin: 0;
+color: black;
+}
+.current__prize >h1{
+    margin: 0;
+    font-weight: 900;
+    }
+#play__quiz{
+    background-color: var(--red);
+    width: fit-content;
+    margin: 0 auto;
+    cursor: pointer;
+    padding:10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#play__quiz:hover{
+    background-color: var(--blue);
+}
+#play__quiz >h1{
+font-weight: 900;
+}
+.gameinfo__h2{
+   font-weight: 900;
+}
+h1{
+    color: white;
+}
+.quizando__logo{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin:30px auto;
+}
+.quizando__logo__img{
+    height: 200px;
+    width: 200px;
+    border-radius: 180%;
+    border: 5px solid;
+    border-color:lightgoldenrodyellow;
+}
+.quizando__text{
+    background-color: var(--red);
+     border-radius: 0px 0px 20px 20px;
+     border: 5px solid;
+    border-color:lightgoldenrodyellow;
+}
+.quizando__text >span{
+    font-weight: 900;
+    color: white;
+    font-size: 25px;
+   
+}

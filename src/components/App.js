@@ -13,47 +13,25 @@ import Classics from "./Classics/Classics";
 import FreeToPlay from "./FreeToPlay/FreeToPlay";
 import Partners from "./Partners/Partners";
 import PartnerInfo from "./Partners/PartnerInfo";
+import Private from './Private/Private';
+import GameInfo from "./Games/GameInfo";
+import QuizPage from "./Games/QuizPage";
 
 function App() {
   return (
     <div className="App">
     <Router>
       <Switch >
-      <Route path="/signup">
-      <Navbar />
-        <Signup />
-        <Footer />
-      </Route>
-      <Route path="/login">
-      <Navbar />
-        <Login />
-        <Footer />
-      </Route>
-      <Route path="/live">
-      <Navbar />
-      <Live />
-        <Footer />
-      </Route>
-      <Route path="/classics">
-      <Navbar />
-      <Classics />
-        <Footer />
-      </Route>
-      <Route path="/notokens">
-      <Navbar />
-      <FreeToPlay />
-        <Footer />
-      </Route>
-      <Route path="/hosts">
-      <Navbar />
-      <Partners />
-        <Footer />
-      </Route>
-      <Route path="/:name" component={PartnerInfo}/>
-      {/* <Navbar />
-      <PartnerInfo  />
-        <Footer />
-      </Route> */}
+      <Route exact path="/signup" component={Signup} />
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/live" component={Live} />
+      <Route exact path="/classics" component={Classics}/>
+      <Route exact path="/notokens" component={FreeToPlay}/>
+      <Route exact path="/private-events" component={Private}/>
+      <Route exact path="/hosts" component={Partners}/>
+      <Route exact path="/:name" component={PartnerInfo}/>
+      <Route exact path="/classics/:id" component={GameInfo}/>
+      <Route path="/classics/play/:id" component={QuizPage}/>
       <Route exact path="/">
       <Navbar />
       <Home />

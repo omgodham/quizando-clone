@@ -1,6 +1,6 @@
 
 .card{
-   background-image: url("../../images/ludo.jpg");
+    background-image: url("../../images/ludo.jpg");
     color: white;
     position: relative;
     transition: all 0.5s;

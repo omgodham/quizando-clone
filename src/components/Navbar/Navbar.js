@@ -12,7 +12,12 @@ export default function Navbar() {
   function hide(){
     setFlag(false);
 }
-
+window.addEventListener('resize', function(event) {
+  console.log(window.innerWidth);
+  if (window.innerWidth > 993) {
+    setFlag(false);
+  }
+});
   return (
     <div className="navbar">
       <div className="navbar__login__separate__block">
@@ -59,11 +64,11 @@ export default function Navbar() {
                 Free Games
               </a>
             </li></Link>
-            <li>
+           <Link to="/private-events"> <li>
               <a href="#" className="nav__links">
                 Private Events
               </a>
-            </li>
+            </li></Link>
             <li>
               <Link to='/hosts'><a href="#" className="nav__links">
                 Our Partners
@@ -78,7 +83,7 @@ export default function Navbar() {
               <option>GBP</option>
             </select>
             <AccountCircleIcon className="signup__icon" />
-            <h6 onClick={hide}><Link to="/login" style={{textDecoration:`none`,color:'white'}}>Login</Link></h6>
+            <Link to="/login" style={{textDecoration:`none`,color:'white'}}><h6 onClick={hide}>Login</h6></Link>
             <Link to="/signup" style={{textDecoration:`none`,color:'white'}}><h6 onClick={hide}>Sign Up</h6></Link>
           </div>
         </div>

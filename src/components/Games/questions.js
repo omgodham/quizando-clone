@@ -1,0 +1,128 @@
+const questions=[{
+    question:"What is 1+1?",
+    answers:[
+        {
+            answer:"3",
+            correct:false
+        },
+        {
+            answer:"2",
+            correct:true
+        },
+        {
+            answer:"4",
+            correct:false
+        },
+        {
+            answer:"0",
+            correct:false
+        }
+    ]
+},
+{
+    question:"What is 2+2?",
+    answers:[
+        {
+            answer:"3",
+            correct:false
+        },
+        {
+            answer:"4",
+            correct:true
+        },
+        {
+            answer:"33",
+            correct:false
+        },
+        {
+            answer:"0",
+            correct:false
+        }
+    ]
+},
+{
+    question:"What is 3+3?",
+    answers:[
+        {
+            answer:"3",
+            correct:false
+        },
+        {
+            answer:"4",
+            correct:true
+        },
+        {
+            answer:"44",
+            correct:false
+        },
+        {
+            answer:"0",
+            correct:false
+        }
+    ]
+},
+{
+    question:"What is 4+4?",
+    answers:[
+        {
+            answer:"3",
+            correct:false
+        },
+        {
+            answer:"4",
+            correct:false
+        },
+        {
+            answer:"8",
+            correct:true
+        },
+        {
+            answer:"0",
+            correct:false
+        }
+    ]
+},
+{
+    question:"What is 5+5?",
+    answers:[
+        {
+            answer:"3",
+            correct:false
+        },
+        {
+            answer:"4",
+            correct:false
+        },
+        {
+            answer:"66",
+            correct:false
+        },
+        {
+            answer:"10",
+            correct:true
+        }
+    ]
+},
+{
+    question:"What is 6+6?",
+    answers:[
+        {
+            answer:"12",
+            correct:true
+        },
+        {
+            answer:"4",
+            correct:false
+        },
+        {
+            answer:"77",
+            correct:false
+        },
+        {
+            answer:"0",
+            correct:false
+        }
+    ]
+}];
+
+export default questions;

@@ -3,6 +3,7 @@ import "./Footer.css";
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
+import {Link} from "react-router-dom";
 export default function Footer() {
     return (
         <div class="footer">
@@ -16,22 +17,22 @@ export default function Footer() {
                 <span>Closed Quizzes</span>
             </div>
             <div class="footer-descr">
-                <span>How to play?</span>
-                <span>FAQs</span>
-                <span>Terms & conditions</span>
-                <span>Cookies</span>
-                <span>Privacy Policy</span>
+               <Link to="/how-to-play" style={{textDecoration:'none',color:"black"}}> <span>How to play?</span></Link>
+               <Link to="/faqs" style={{textDecoration:'none',color:"black"}}><span>FAQs</span></Link>
+               <Link to="/terms-and-conditions" style={{textDecoration:'none',color:"black"}}><span>Terms & conditions</span></Link>
+               <Link to="/cookies" style={{textDecoration:'none',color:"black"}}><span>Cookies</span></Link>
+               <Link to="/privacy-policy" style={{textDecoration:'none',color:"black"}}><span>Privacy Policy</span></Link>
             </div>
             <div class="footer-descr">
-                <span>Login</span>
-                <span>Sign up to Quizando</span>
+            <Link to="/login" style={{textDecoration:'none',color:"black"}}><span>Login</span></Link>
+            <Link to="/signup" style={{textDecoration:'none',color:"black"}}><span>Sign up to Quizando</span></Link>
                 <span>Buy Tokens</span>
-                <span>Contact Us</span>
+                <Link to="/contact-us" style={{textDecoration:'none',color:"black"}}>  <span>Contact Us</span></Link>
             </div>
             <div class="footer-descr">
-                <span>Quizando Partners</span>
+            <Link to="/hosts" style={{textDecoration:'none',color:"black"}}><span>Quizando Partners</span></Link>
                 <span>Become a Partner</span>
-                <span>Private Events Info</span>
+                <Link to="/private-events-info" style={{textDecoration:'none',color:"black"}}>  <span>Private Events Info</span></Link>
             </div>
             <div className="footer__payments">
                 <h2 className="footer__title">Connect with us:</h2>

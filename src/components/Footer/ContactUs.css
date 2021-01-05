@@ -1,0 +1,27 @@
+.contactus{
+    width: 90%;
+    margin: 20px auto;
+}
+.contactus >h2{
+    font-weight: 800;
+    font-size: 21px;
+    opacity: 0.9;
+}
+.contactus >button{
+    background-color: var(--red);
+    border: none;
+    border-radius: 5px;
+    padding:5px 10px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.contactus__address{
+    width: 30%;
+    font-weight: 600;
+}
+.contactus__address >h5{
+    color: var(--blue);
+    font-weight: 700;
+}

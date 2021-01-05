@@ -10,7 +10,7 @@ export default function Card({id ,title, price, dateAndTime}) {
   onlyDay=onlyDay.split('2021')[0];
 
   return (
-    <Link to={`/classics/${id}`}> <div className="card">
+    <Link to={`/classics/${id}`} style={{textDecoration:'none'}}> <div className="card">
         <div className="card__fix__block">
           <img
             className="card__logo"

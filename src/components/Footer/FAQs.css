@@ -1,0 +1,28 @@
+.faqs__header{
+    background-color: gainsboro;
+}
+.faqs__header >h1{
+    color: black;
+    font-weight: 800;
+    text-align: center;
+    padding: 40px 0;
+}
+.faqs__content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+.faqs__content >h3{
+    background-color: transparent;
+    margin-right: auto;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 900;
+    opacity: 0.7;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+.faqs__qna >h5{
+font-weight: 800;
+opacity: 0.7;
+}

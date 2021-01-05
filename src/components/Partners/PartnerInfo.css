@@ -20,6 +20,8 @@ background-color: rgb(240, 240, 240);
 }
 .info__right__block >h1{
     font-weight: 900;
+    color: black;
+    opacity: 0.8;
 }
 .info__right__block >p{
     font-weight: 600;

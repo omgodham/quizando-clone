@@ -30,7 +30,7 @@ h3,.answers{
     text-align: left;
     font-size: 20px;
 }
-p>span{
+#answer__id>span{
     color: white;
     font-weight: 800;
     background-color: var(--gray);

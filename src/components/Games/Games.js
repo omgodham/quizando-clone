@@ -16,14 +16,6 @@ const [quizess,setQuizess]=useState([]);
     console.log(request);
     setQuizess(request.data.payload.quizzes);
      console.log(quizess);
-  // console.log(quizess[0].endDate);
-//   var myDate = new Date(request.data.payload.quizess[0].endDate);
-//   var dateAndTime = quizess[0].endDate;
-// var day=dateAndTime.split('T')[0];
-// var myDate1 = new Date(day);
-// var onlyDate=myDate1.toDateString();
-// console.log(onlyDate.split('2021')[0]);
-// // console.log(myDate2.getHours());
 
   }
 
@@ -32,9 +24,9 @@ const [quizess,setQuizess]=useState([]);
     return (
     <div className="games">
       <div className="games__btns">
-        <h3>Live!</h3>
-        <h3>Free Games</h3>
-        <h3>Classics</h3>
+        <h3><img src="https://www.quizando.com/assets/svg/live_icon.svg" />Live!</h3>
+        <h3><img src="https://www.quizando.com/assets/svg/notokens_icon.svg" />Free Games</h3>
+        <h3><img src="https://www.quizando.com/assets/svg/classics_icon.svg" />Classics</h3>
       </div>
       <div className="games__cards">
         {quizess.map((item) => {

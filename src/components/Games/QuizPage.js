@@ -48,7 +48,6 @@ export default function QuizPage({match}) {
                 <div className="answers">
                    {answerBank.map((answerObj,index) => {
                        return <p id="answer__id" onClick={checkAnswer(answerObj.correct)}><span>{index}</span>{answerObj.answer}</p>
-                    
                    })}
                 </div>   
         </div>

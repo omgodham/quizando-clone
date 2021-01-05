@@ -46,8 +46,8 @@ export default function Login() {
       <Form>
         <p style={{textAlign:'center'}}><span>Login to Quizando with your social media account or email address</span></p>
         <div className="login__socials">
-            <button><img alt="" src={facebook}/>Login with Facebook</button>
-            <button><img alt="" src={search}/>Login with Google</button>
+            <button className="faccebook__btn"><img alt="" src={facebook}/>Login with Facebook</button>
+            <button className="search__btn"><img alt="" src={search}/>Login with Google</button>
         </div>
         <p className="separator">OR</p>
         <Form.Group controlId="formBasicEmail">

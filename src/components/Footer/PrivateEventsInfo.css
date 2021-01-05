@@ -1,0 +1,33 @@
+.privateeventsinfo{
+width: 80%;
+margin: 30px auto;
+
+}
+
+
+.privateeventsinfo__content{
+    padding-top: 30px;
+    display: grid;
+grid-template-columns: auto auto;
+grid-column-gap: 30px;
+font-size: 18px;
+font-weight: 600;
+}
+.private__info__right{
+    display: flex;
+    flex-direction: column;
+}
+.broucher__img{
+    height: 200px;
+    width: 90px;
+    margin: 0 auto;
+}
+.broucher__download__btn{
+    background-color: var(--red);
+    color: white;
+    font-weight:700 ;
+    border: none;
+    cursor: pointer;
+    padding:10px 0;
+    border-radius: 10px;
+}

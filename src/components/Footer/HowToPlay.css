@@ -1,0 +1,49 @@
+.howtoplay__header{
+    background-color: gainsboro;
+    text-align: center;
+}
+.howtoplay__header >h2{
+font-weight: 900;
+font-size: 25px;
+padding: 20px 0;
+}
+.howtoplay__content{
+    width: 80%;
+    margin: 0 auto;
+}
+.howtoplay__btns{
+    display: flex;
+    text-align: center;
+    width: 78%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.howtoplay__btns >h3{
+    margin: 0 5px;
+    padding: 8px 2px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 21px;
+    color: white;
+    background-color:rgb(199, 197, 197);
+    cursor: pointer;
+}
+#howtoplay__live{
+    background-color: var(--red);
+}
+
+.howtoplay__content >h4{
+    color: var(--blue);
+    font-size: 20px;
+    font-weight: 700;
+}
+.howtoplay__content >p{
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.howtoplay__content >span{
+    font-size: 18px;
+    font-weight: 800;
+    opacity: 0.8;
+}

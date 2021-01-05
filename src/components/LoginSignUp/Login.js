@@ -14,8 +14,12 @@ export default function Login() {
   const [otp,setOtp]=useState();
   const [flag,setflag]=useState(false);
 
+  function checkOtp(e){
+          setOtp(e.target.value);
+        }
 
-  useEffect(() => {
+  function sendOtp() {
+    setflag(true);
     instance.post("/user/login",{
       phone:"9922653369"
     }).then(res => {
@@ -24,13 +28,6 @@ export default function Login() {
     .catch(err => {
       console.log(err);
     })
-  },[]);
-  function checkOtp(e){
-          setOtp(e.target.value);
-        }
-
-  function sendOtp() {
-    setflag(true);
   }
 
   return (

@@ -10,11 +10,11 @@ export default function Footer() {
         <div class="footer-content">
             <div class="footer-descr">
                 <span className="footer__title">Quizando</span>
-                <span>Quizando Level!</span>
-                <span>Quizando Classics</span>
-                <span>Free Games</span>
-                <span>Private Events</span>
-                <span>Closed Quizzes</span>
+                <Link to="/live" style={{textDecoration:'none',color:"black"}}><span>Quizando Live!</span></Link>
+                <Link to="/classics" style={{textDecoration:'none',color:"black"}}><span>Quizando Classics</span></Link>
+                <Link to="/notokens" style={{textDecoration:'none',color:"black"}}><span>Free Games</span></Link>
+                <Link to="/private-events" style={{textDecoration:'none',color:"black"}}><span>Private Events</span></Link>
+                <Link to="/hosts" style={{textDecoration:'none',color:"black"}}><span>Closed Quizzes</span></Link>
             </div>
             <div class="footer-descr">
                <Link to="/how-to-play" style={{textDecoration:'none',color:"black"}}> <span>How to play?</span></Link>

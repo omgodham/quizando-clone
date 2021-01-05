@@ -17,7 +17,7 @@ export default function FreeToPlay() {
         </div>
             <div className="live__cards">
             {gameslist.slice(0,15).map( (item,index) => {
-                    return <Card id={index} title={item.title} price={item.price} dateAndTime='12/23/2000T12:23:4'/>
+                    return <Card id={index} title={item.title} price={item.price} dateAndTime='12/23/2001T12:23:4'/>
             })
             }
             </div>

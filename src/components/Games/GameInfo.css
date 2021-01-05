@@ -1,5 +1,5 @@
 .game__info{
-width: 70%;
+width: 80%;
 margin: 20px auto;
 background-color:var(--blue);
 /* padding:30px; */
@@ -21,6 +21,7 @@ color: black;
 .current__prize >h1{
     margin: 0;
     font-weight: 900;
+    color: white;
     }
 #play__quiz{
     background-color: var(--red);
@@ -36,12 +37,10 @@ color: black;
 }
 #play__quiz >h1{
 font-weight: 900;
+color: white;
 }
 .gameinfo__h2{
    font-weight: 900;
-}
-h1{
-    color: white;
 }
 .quizando__logo{
     display: flex;
@@ -66,5 +65,60 @@ h1{
     font-weight: 900;
     color: white;
     font-size: 25px;
-   
+}
+.final__entry{
+text-align: center;
+width: 80%;
+margin: 0 auto;
+background-color: rgb(233, 233, 233);
+}
+.final__entry__title{
+    font-weight: 800;
+    padding: 20px;
+    border-bottom: 1px solid gray;
+}
+.description__btns{
+  
+    display: flex;
+}
+.description__btns >h4{
+    background-color: white;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 5px 10px;
+    margin-left: 10px;
+    color: var(--red);
+    border-radius: 5px;
+}
+.game__text{
+background-color: transparent !important;
+font-size: 20px;
+width: 100% !important;
+margin:20px;
+font-weight: 500;
+opacity: 0.8;
+}
+.final__entry__btns{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}
+.final__entry__btns >button{
+    padding: 5px 15px;
+    font-weight: 800;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin: 0 10px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+.final__entry__btns >button:nth-child(1){
+    background-color:var(--blue);
+}
+.final__entry__btns >button:nth-child(2){
+    background-color:var(--yellow);
+}
+.final__entry__btns >button:nth-child(3){
+    background-color:var(--red);
 }

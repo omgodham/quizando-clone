@@ -60,7 +60,7 @@
 }
 
 .card__bottom__btn{
-    /* background-color: blue; */
+   background-color: var(--blue);
     width: fit-content;
     color: white;
     font-weight: 800;

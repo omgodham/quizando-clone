@@ -16,8 +16,8 @@ export default function Classics() {
             <p>Battle it out to top the leaderboard and win a share of the cash prize!</p>
         </div>
             <div className="live__cards">
-            {gameslist.slice(0,20).map( (item) => {
-                    return <Card title={item.title} price={item.price} />
+            {gameslist.slice(0,20).map( (item,index) => {
+                    return <Card id={index} title={item.title} price={item.price} dateAndTime='12/23/2000T12:23:4'/>
             })
             }
             </div>

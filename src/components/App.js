@@ -23,6 +23,7 @@ import Cookies from './Footer/Cookies';
 import Privacy from './Footer/Privacy';
 import ContactUs from './Footer/ContactUs';
 import PrivateEventsInfo from './Footer/PrivateEventsInfo';
+import Profile from "./Profile/Profile";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
       <Route exact path="/privacy-policy" component={Privacy}/>
       <Route exact path="/contact-us" component={ContactUs}/>
       <Route exact path="/private-events-info" component={PrivateEventsInfo}/>
+      <Route exact path="/profile" component={Profile}/>
       <Route exact path="/:name" component={PartnerInfo}/>
       <Route exact path="/classics/:id" component={GameInfo}/>
       <Route exact path="/classics/play/:id" component={QuizPage}/>

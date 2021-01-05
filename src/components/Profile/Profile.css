@@ -1,0 +1,104 @@
+.profile__content{
+    width: 70%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+
+}
+.profile__header{
+    background-color: rgb(211, 211, 211);
+    text-align: center;
+}
+.profile__header >h2{
+    font-weight: 900;
+    opacity: 0.8; 
+    padding:30px 0;
+}
+
+.profile__menu__list{
+    list-style: none;
+}
+.player__account{
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.profile__menu__list li:hover{
+    color: var(--red);
+    cursor: pointer;
+}
+.profile__right__content>h5{
+    font-weight: 700;
+    font-size: 20px !important;
+    margin-bottom: 20px;
+}
+.buy__tokens{
+display: flex;
+text-align: center;
+background-color: rgb(211, 211, 211);
+border-radius: 7px;
+padding:10px;
+}
+.token__balance >span{
+    font-size: 20px;
+    font-weight: 700;
+}
+.token__balance >p{
+    font-size: 15px;
+}
+.winnings__balance{
+    margin-left: 40px;
+}
+.winnings__balance >span{
+    font-size: 20px;
+    font-weight: 700;
+}
+.winnings__balance >p{
+    font-size: 15px;
+}
+.profile__btn{
+    margin-left: auto;
+    padding: 5px 10px !important;
+    font-weight: 800 !important;
+}
+.actual__details{
+    display: flex;
+    margin: 5px 0;
+}
+.actual__details >span:nth-child(1){
+    width: 120px;
+}
+.details__value{
+color: var(--red);
+}
+.details__block__left{
+
+    padding: 30px;
+    border-radius: 6px;
+}
+.myaccount__details{
+    display: grid;
+    grid-template-columns: 0.8fr 0.2fr;
+    background-color: rgb(211, 211, 211);
+}
+.upload__image{
+  margin-right: 30px;
+  margin-top: 30px;
+text-align: center;
+}
+.upload__image >h3{
+background-color: var(--blue);
+font-size: 20px;
+font-weight: 800;
+color: white;
+padding: 20px 0;
+}
+.right__content__btns{
+    background-color: rgb(211, 211, 211);  
+    width: 100%;
+    text-align: center; 
+    padding-bottom: 20px;
+}
+.bottom__btn{
+    margin: 0 10px;
+}

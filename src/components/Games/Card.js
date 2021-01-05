@@ -6,7 +6,6 @@ export default function Card({id ,title, price, dateAndTime}) {
   var day=dateAndTime.split('T')[0];
   var myDate1 = new Date(day);
   var onlyDay=myDate1.toDateString();
-// // console.log(onlyDate.split('2021')[0]);
   onlyDay=onlyDay.split('2021')[0];
 
   return (

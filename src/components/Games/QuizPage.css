@@ -8,8 +8,8 @@
     background-color: rgba(0,0,0,0.8);
     padding:30px;
 }
-h3,.answers{
-    width: 40%;
+.quiz__block >h3,.answers{
+    width: 37%;
     margin: 0 auto;
 }
 .quiz__block >h3{
@@ -17,31 +17,35 @@ h3,.answers{
     background-color: transparent;
     font-weight: 500;
     margin-bottom: 20px;
+    font-size: 25px;
+    transition:all 2s ease;
 }
 .start__btn{
     margin: 0 auto !important;
 }
-.answers >p{
-    background-color: white;
-    margin:10px 0;
-    padding:5px 0;
-    color: black;
-    font-weight: 800;
-    text-align: left;
-    font-size: 20px;
+.answer__id{
+display: flex;
+margin-bottom: 10px;
+align-items: center;
+background-color: white;
 }
-#answer__id>span{
-    color: white;
+.answer__id:hover{
+    background-color: rgb(236, 192, 181);
+    cursor: pointer;
+}
+.answer__id >p{
+    margin:0;
+    width: 100%;
     font-weight: 800;
-    background-color: var(--gray);
-    padding: 7px;
-    margin-right: 30px;
+    font-size: 28px;
 }
 
-.answers >p:hover{
-    background-color: rgb(255, 231, 235);
-    color: black;
-    cursor: pointer;
+.answer__id >span{
+    color: white;
+    font-weight: 700;
+    background-color: var(--gray);
+    font-size: 28px;
+    width: 10%;
 }
 .footer__block{
     width: 80%;

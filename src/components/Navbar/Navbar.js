@@ -82,7 +82,7 @@ window.addEventListener('resize', function(event) {
               <option>USD</option>
               <option>GBP</option>
             </select>
-            <AccountCircleIcon className="signup__icon" />
+            <Link to="/profile"><AccountCircleIcon className="signup__icon" /></Link>
             <Link to="/login" style={{textDecoration:`none`,color:'white'}}><h6 onClick={hide}>Login</h6></Link>
             <Link to="/signup" style={{textDecoration:`none`,color:'white'}}><h6 onClick={hide}>Sign Up</h6></Link>
           </div>

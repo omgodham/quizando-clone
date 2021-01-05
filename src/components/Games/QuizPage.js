@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import questions from "./questions";
 import Button from "react-bootstrap/Button";
 import "./QuizPage.css"
+import Leaderboard from "./Leaderboard";
 import { useState } from "react";
 export default function QuizPage({match}) {
 
@@ -28,11 +29,13 @@ export default function QuizPage({match}) {
         },3000);
     }
 
-    function checkAnswer(correct) {
+    function checkAnswer(id,correct) {
         if(correct){
+            console.log(id);
             console.log(correct)
         }
       else{
+          console.log(id);
             console.log(correct)
         }
         }
@@ -47,7 +50,10 @@ export default function QuizPage({match}) {
                 <h3>{questionBank}</h3>
                 <div className="answers">
                    {answerBank.map((answerObj,index) => {
-                       return <p id="answer__id" onClick={checkAnswer(answerObj.correct)}><span>{index}</span>{answerObj.answer}</p>
+                       return <div id={index} className="answer__id">
+                       <span>{index}</span>
+                       <p>{answerObj.answer}</p>
+                              </div>
                    })}
                 </div>   
         </div>
@@ -73,8 +79,9 @@ export default function QuizPage({match}) {
                     <p>Leaderboard First Place</p>
                 </div>
             </div>
+
        </div>
-       
+       <Leaderboard />
         <Footer />
         </>
     )
